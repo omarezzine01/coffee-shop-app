@@ -6,17 +6,22 @@ import {AlertModule} from 'ng2-bootstrap';
 
 import { AppComponent } from './app.component';
 import { CoffeeItemComponent } from './coffee-item/coffee-item.component';
+import { EditCoffeeItemComponent } from './edit-coffee-item/edit-coffee-item.component';
+import { AppRoutingModule} from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CoffeeItemComponent
+    CoffeeItemComponent,
+    EditCoffeeItemComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     AlertModule.forRoot(),
+    AppRoutingModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
